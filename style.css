@@ -20,6 +20,8 @@ body{
 }
 .cooking-master{
     color:#3B2D64;
+    font-weight: 700;
+    font-size:24px;
 }
 .navbar-brand:hover{
     color:#3B2D64;
@@ -31,7 +33,7 @@ body{
     color:#292424;
 }
 .search-item{
-    margin-top:10%;
+    margin-top:8%;
 }
 .btn-search{
     background-color:#3B2D64;
@@ -40,4 +42,7 @@ body{
 .btn-search:hover{
     background-color:#241a41;
     color:#FFFFFF;
+}
+input{
+    width: 350px;
 }

@@ -13,7 +13,7 @@
 
 <body>
     <header id="header">
-        <nav class="navbar fixed-top navbar-expand-lg cooking-master">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand cooking-master" href="#">Cooking Master</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -40,10 +40,21 @@
         </nav>
     </header>
     <main>
-        <div class="search-item cooking-master d-flex justify-content-center">
-            <input type="text" id="meal-search" placeholder="Search for meal...">
-            <button type="button" class="btn btn-search">Search</button>
-        </div>
+        <section class="">
+            <div class="search-item d-flex justify-content-center">
+                <input type="text" id="meal-search-input" placeholder="Search for meal...">
+                <button id="meal-search-btn"  onclick="searchMeal()" type="button" class="btn btn-search">Search</button>
+            </div>
+        </section>
+        <section>
+            <div class="mt-5 p-5">
+                <div id="meal-details">
+
+                </div>
+                <div id="meals" class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
