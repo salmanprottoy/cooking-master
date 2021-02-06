@@ -1,5 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size:18px;
     background-color:#EDD263;
+}
+.banner-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 45px;
+}
+.navbar .container-fluid {
+    padding: 0 100px;
+}
+.navbar-brand{
+    width:60px;
 }
 .cooking-master{
     color:#3B2D64;
@@ -14,7 +31,7 @@ body{
     color:#292424;
 }
 .search-item{
-    margin-top:3%;
+    margin-top:5%;
 }
 .btn-search{
     background-color:#3B2D64;
