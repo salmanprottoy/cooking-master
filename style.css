@@ -1,0 +1,26 @@
+body{
+    background-color:#EDD263;
+}
+.cooking-master{
+    color:#3B2D64;
+}
+.navbar-brand:hover{
+    color:#3B2D64;
+}
+.nav-link{
+    color:#383838;
+}
+.nav-link:hover{
+    color:#292424;
+}
+.search-item{
+    margin-top:3%;
+}
+.btn-search{
+    background-color:#3B2D64;
+    color:#FFFFFF;
+}
+.btn-search:hover{
+    background-color:#241a41;
+    color:#FFFFFF;
+}
