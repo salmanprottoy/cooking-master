@@ -64,6 +64,8 @@ const renderMealInfo = meal =>{
                                         <li class="list-group-item">${meal.strMeasure6} ${meal.strIngredient6}</li>
                                         <li class="list-group-item">${meal.strMeasure7} ${meal.strIngredient7}</li>
                                         <li class="list-group-item">${meal.strMeasure8} ${meal.strIngredient8}</li>
+                                        <li class="list-group-item">${meal.strMeasure9} ${meal.strIngredient9}</li>
+                                        <li class="list-group-item">${meal.strMeasure10} ${meal.strIngredient10}</li>
                                     </ul>
                                     <h4><u>Instructions:</u></h4>
                                     <p>${meal.strInstructions}</p>
