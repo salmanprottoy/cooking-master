@@ -7,25 +7,24 @@ function searchMeal(){
 }
 
 const displayFoods = foods =>{
-    console.log(foods.meals);
     const mealsDiv = document.getElementById("meals")
     if(foods.meals == null){
         mealsDiv.innerHTML = "";
     }else{
         foods.meals.forEach(meal =>{
+            console.log(meal);
             const mealDiv = document.createElement("div");
-            const mealInfo = `
-                    <div class="col">
-                        <div class="card cooking-card h-100 shadow bg-white rounded border-">
-                            <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
-                            <div
-                                class="card-body border-top-0 bg-white cooking-card-footer d-flex justify-content-between">
-                                <p class="card-text">${meal.strMeal}</p>
+            const mealInfo = 
+                       `<div class="col">
+                            <div class="card h-100 shadow bg-white rounded border-0">
+                                <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-title">${meal.strMeal}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    `;
-            mealsDiv.innerHTML = mealInfo;
+                        `;
+            mealDiv.innerHTML = mealInfo;
             mealsDiv.appendChild(mealDiv);
         });
     }
