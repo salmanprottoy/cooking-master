@@ -47,3 +47,6 @@ input{
     width: 350px;
     padding: 5px;
 }
+#meal-details{
+    display: none;
+}
