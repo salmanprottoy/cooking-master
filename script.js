@@ -11,7 +11,11 @@ const displayFoods = foods =>{
     const mealIfoDiv = document.getElementById('meal-details');
     mealIfoDiv.style.display = 'none';
     if(foods.meals == null){
-        mealsDiv.innerHTML = "";
+        mealsDiv.innerHTML = `
+                                <div class="col">
+                                    <p class="text-danger text-center">Can't find any food</p>
+                                </div>
+                            `;
     }else{
         foods.meals.forEach(meal =>{
             const mealDiv = document.createElement("div");
