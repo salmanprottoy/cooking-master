@@ -43,9 +43,6 @@ const displayMealDetails = id =>{
 }
 
 const renderMealInfo = meal =>{
-    console.log(meal);
-    const mealsDiv = document.getElementById("meals");
-    mealsDiv.innerHTML = "";
     const mealIfoDiv = document.getElementById('meal-details');
     mealIfoDiv.innerHTML =
                     `<div class="row row-cols-2 row-cols-md-9 g-4 justify-content-center">
