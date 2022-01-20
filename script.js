@@ -1,9 +1,19 @@
+let searchBox =document.querySelector('#meal-search-input');
+
+
+
 function searchMeal(){
     const mealName = document.getElementById("meal-search-input").value;
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`)
     .then(res => res.json())
     .then(data => displayFoods(data));
 }
+
+searchBox.addEventListener('keyup', function(e){
+    if(e.key==='Enter'){
+        searchMeal()
+    }
+})
 
 const displayFoods = foods =>{
     const mealsDiv = document.getElementById("meals");
